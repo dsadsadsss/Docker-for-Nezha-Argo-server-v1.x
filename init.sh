@@ -15,7 +15,7 @@ if [ ! -s /etc/supervisor/conf.d/damon.conf ]; then
   else
     GRPC_PORT=${GRPC_PORT:-'8008'}
     WEB_PORT=${WEB_PORT:-'8008'}
-    AGENT_VER=${AGENT_VER:-'v2.2.1'}
+    AGENT_VER=${AGENT_VER:-'v2.2.2'}
   fi
   CADDY_HTTP_PORT=2052
   PRO_PORT=${PORT:-'80'}
