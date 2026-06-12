@@ -6,7 +6,7 @@ if [ ! -s /etc/supervisor/conf.d/damon.conf ]; then
   # 设置 Github CDN 及若干变量，如是 IPv6 only 或者大陆机器，需要 Github 加速网，可自行查找放在 GH_PROXY 处 ，如 https://mirror.ghproxy.com/ ，能不用就不用，减少因加速网导致的故障。
   GH_PROXY='https://ghproxy.lvedong.eu.org/'
   GRPC_PROXY_PORT=${GRPC_PROXY_PORT:-'443'}
-  DASH_VER=${DASH_VER:-'v2.2.0'}
+  DASH_VER=${DASH_VER:-'v2.2.3'}
 
   if [[ "$DASH_VER" =~ ^(v)?0\.[0-9]{1,2}\.[0-9]{1,2}$ ]]; then
     GRPC_PORT=${GRPC_PORT:-'5555'}
