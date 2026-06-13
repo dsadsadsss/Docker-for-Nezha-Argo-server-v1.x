@@ -95,6 +95,7 @@ if [ -z "$API_TOKEN" ]; then
         transport http {
             versions h2c 2
         }
+        flush_interval -1
     }
     tls $WORK_DIR/nezha.pem $WORK_DIR/nezha.key
 }
@@ -118,6 +119,7 @@ EOF
         transport http {
             versions h2c 2
         }
+        flush_interval -1
     }
     tls $WORK_DIR/nezha.pem $WORK_DIR/nezha.key
 }
@@ -161,10 +163,10 @@ if [ -n "$UUID" ] && [ "$UUID" != "0" ]; then
         transport http {
             versions h2c 2
         }
+        flush_interval -1
     }
     tls $WORK_DIR/nezha.pem $WORK_DIR/nezha.key
 }
-
 EOF
  else
   cat > $WORK_DIR/Caddyfile  << EOF
@@ -187,6 +189,7 @@ EOF
         transport http {
             versions h2c 2
         }
+        flush_interval -1
     }
     tls $WORK_DIR/nezha.pem $WORK_DIR/nezha.key
 }
