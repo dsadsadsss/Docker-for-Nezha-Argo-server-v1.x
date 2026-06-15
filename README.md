@@ -43,7 +43,7 @@ https://github.com/dsadsadsss/java-wanju.git
 | `GH_REPO` | GitHub备份仓库 | 备份需要，不用备份则不填 | 否 | 无 |
 | `DASH_TOKEN` | 客户端使用的哪吒KEY | 即客户端使用的哪吒KEY | 是| 可以使用节点的UUID值 |
 | `API_TOKEN` | 客户端节点设置名字的token | 设置与上面DASH_TOKEN相同的值 | 否|不设置则不支持客户端设置名字 |
-#### docker镜像(PORT设置端口，默认面板端口80和8008，节点直连端口80，节点固定隧道端口8001和80均可):
+#### docker镜像(PORT设置端口，默认面板端口80，节点直连端口80，节点固定隧道端口8001和80均可):
 ```
 daxia2023/nezv1:latest
 ```
